@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 const dbURI =
-  "mongodb+srv://leomeliande:VDeOWJTeyhPkxxRy@review-pwact.mongodb.net/test?retryWrites=true&w=majority retryWrites=true";
+  "mongodb+srv://leomeliande:mongo2508@cluster0-ntee5.mongodb.net/test?retryWrites=true&w=majority";
 
 mongoose.connect(dbURI, { 
     useNewUrlParser: true,
