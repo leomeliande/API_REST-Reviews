@@ -10,13 +10,17 @@ const TaskSchema = new Schema({
     type: String,
     required: true
   },
+  plataforma: {
+    type:String,
+    required: true
+  },
   curtido: {
-      type: Boolean,
-      default: false
+    type: Boolean,
+    default: false
   },
   qtdcurtido: {
-      type: Number,
-      default: 0
+    type: Number,
+    default: 0
   },
   createdOn: {
     type: Date,
