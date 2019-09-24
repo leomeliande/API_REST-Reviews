@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const TaskSchema = new Schema({
+const ReviewSchema = new Schema({
   nome: {
     type: String,
     required: true
@@ -28,4 +28,4 @@ const TaskSchema = new Schema({
   }
 });
 
-module.exports = mongoose.model("Tasks", TaskSchema);
+module.exports = mongoose.model("Reviews", ReviewSchema);
