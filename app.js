@@ -2,7 +2,7 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const taskController = require("./controllers/TaskController");
+const reviewController = require("./controllers/ReviewController");
 
 // db instance connection
 require("./config/db");
@@ -17,14 +17,14 @@ app.use(bodyParser.json());
 
 app
   .route("/reviews")
-  .get(taskController.listAllTasks)
-  .post(taskController.createNewTask);
+  .get(reviewController.listAllReviews)
+  .post(reviewController.createNewReview);
 
 app
   .route("/reviews/:reviewid")
-  .get(taskController.readTask)
-  .put(taskController.updateTask)
-  .delete(taskController.deleteTask);
+  .get(reviewController.readReview)
+  .put(reviewController.updateReview)
+  .delete(reviewController.deleteReview);
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
